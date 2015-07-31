@@ -13,11 +13,17 @@
     loader.gummiboot.enable = true;
 
     initrd = { 
-      
+      availableKernelModules = [ 
+        "ohci_pci"
+        "ehci_pci"
+        "ahci"
+        "firewire_ohci"
+        "usb_storage"
+        "usbhid"
+      ];     
       kernelModules = [ 
         "fbcon"     # Text in the console, before login
         "kvm-intel" # Dunno...  
-        "wl"        # Broadcom drivers required to v. 3.18
       ]; 
       
       # Cryptation LVM on LUKS

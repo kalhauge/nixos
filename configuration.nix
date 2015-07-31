@@ -7,11 +7,11 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
       ./boot.nix
       ./users.nix
       ./xserver.nix
       ./network.nix
+      ./filesystem.nix
     ];
 
   nixpkgs.config.allowUnfree = true;
