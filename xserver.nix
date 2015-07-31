@@ -18,7 +18,20 @@
       user = "kalhauge";
     };
     videoDrivers = [ "nvidia" ];
-    synaptics.enable = true; 
+    
+    synaptics = {
+      enable = false; 
+      # Change Scroll to feel natural
+      horizontalScroll = true;
+      twoFingerScroll = true;
+    };
+
+    multitouch = {
+      enable = true;
+      ignorePalm = true;
+      invertScroll = true; 
+    };
+
     desktopManager.xterm.enable = false;
    
     # remember to activate packages
