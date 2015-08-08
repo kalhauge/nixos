@@ -8,6 +8,7 @@
     hostId = "c43da070";
     wireless = {
       enable = true;  # Enables wireless.
+      interfaces = [ "wlp4s0" ]; # Sadly it's needed
       userControlled = {
         enable = true;
         group = "network";

@@ -18,7 +18,7 @@
 
   powerManagement = {
     enable = true;
-    powerManagement.scsiLinkPolicy = "min_power";
+    scsiLinkPolicy = "min_power";
   };
   
   #vList packages installed in system profile. To search by name, run:
@@ -48,6 +48,7 @@
     # X11 
     xclip
     termite
+    xcb-util-cursor
   ]; 
 
   # Enable the OpenSSH daemon.

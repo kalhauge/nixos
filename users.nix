@@ -6,13 +6,16 @@
 { config, pkgs, ... }:
 {
   security.sudo.wheelNeedsPassword = false;
+
+  users.extraGroups = {
+    network = {};
+  };
   
   users.extraUsers.kalhauge = {
     isNormalUser = true;
     home = "/home/kalhauge";
     extraGroups = [ 
       "wheel"
-      "networkmanager"
       "network"
     ];
     shell = "/run/current-system/sw/bin/zsh";
