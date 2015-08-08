@@ -10,7 +10,11 @@
   users.extraUsers.kalhauge = {
     isNormalUser = true;
     home = "/home/kalhauge";
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ 
+      "wheel"
+      "networkmanager"
+      "network"
+    ];
     shell = "/run/current-system/sw/bin/zsh";
     uid = 1000;
   };

@@ -6,7 +6,13 @@
   networking = {
     hostName = "joshua";     # Define your hostname.
     hostId = "c43da070";
-    wireless.enable = true;  # Enables wireless.
+    wireless = {
+      enable = true;  # Enables wireless.
+      userControlled = {
+        enable = true;
+        group = "network";
+      };
+    };
   };
 
   # Workaround for Broadcom drivers required to v. 3.18
@@ -15,6 +21,6 @@
   boot = {
     initrd.kernelModules = [ "wl" ];
     extraModulePackages = [ config.boot.kernelPackages.broadcom_sta ];
-  }
+  };
 
 }

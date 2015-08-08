@@ -4,13 +4,6 @@
 
 {
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  # services.xserver.layout = "us";
-  # services.xserver.xkbOptions = "eurosign:e";
-
-  services.xserver.windowManager.xmonad = true;
-  
-  # Enable the X11 windowing system.
   services.xserver = {
     enable = true;
     displayManager.auto = {
@@ -52,7 +45,7 @@
     haskellPackages.xmonad
     haskellPackages.xmonadContrib
     haskellPackages.xmonadExtras
-  ]
+  ];
 
   # Setup fonts
   fonts = {

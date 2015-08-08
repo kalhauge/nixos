@@ -15,6 +15,11 @@
     ];
 
   nixpkgs.config.allowUnfree = true;
+
+  powerManagement = {
+    enable = true;
+    powerManagement.scsiLinkPolicy = "min_power";
+  };
   
   #vList packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
