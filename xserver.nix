@@ -49,10 +49,14 @@
 
   # Setup fonts
   fonts = {
-    fonts =  with pkgs; [
+    enableFontDir = true;
+    enableGhostscriptFonts = true;
+    fonts = with pkgs; [
+      corefonts
+      ubuntu_font_family
       dejavu_fonts
       terminus_font
-      # incosolata -- Does not work
+      inconsolata # Does not work
     ];
     fontconfig = {
       defaultFonts = {
