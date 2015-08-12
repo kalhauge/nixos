@@ -44,7 +44,7 @@
     # Code
     python27
     python34
-    ghc.ghc783
+    # ghc.ghc783
     
     # X11 
     xclip

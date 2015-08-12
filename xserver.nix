@@ -10,7 +10,7 @@
       enable = true;
       user = "kalhauge";
     };
-    videoDrivers = [ "nvidia" ];
+    videoDrivers = [ "nvidiaLegacy340" ];
     
     synaptics = {
       enable = false; 
@@ -37,14 +37,17 @@
     };
   };
   
-  hardware.opengl.driSupport32Bit = true;
+  hardware.opengl = { 
+    # videoDrivers = [ "nvideaLegacy340" ];
+    # driSupport32Bit = true;
+  };
 
   environment.systemPackages = with pkgs; [
     # Xmonad
     haskellPackages.xmobar
-    haskellPackages.xmonad
-    haskellPackages.xmonadContrib
-    haskellPackages.xmonadExtras
+    #haskellPackages.xmonad
+    # haskellPackages.xmonadContrib
+    # haskellPackages.xmonadExtras
   ];
 
   # Setup fonts
