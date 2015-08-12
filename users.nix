@@ -11,6 +11,8 @@
     network = {};
   };
   
+  users.defaultUserShell = "/run/current-system/sw/bin/zsh";
+
   users.extraUsers.kalhauge = {
     isNormalUser = true;
     home = "/home/kalhauge";

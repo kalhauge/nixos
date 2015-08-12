@@ -20,12 +20,13 @@
     enable = true;
     scsiLinkPolicy = "min_power";
   };
+
+  programs.zsh.enable = true;
   
   #vList packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
     # Utils 
-    zsh
     fasd
 
     # Utils
