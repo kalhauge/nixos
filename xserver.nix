@@ -39,7 +39,7 @@
   
   hardware.opengl = { 
     # videoDrivers = [ "nvideaLegacy340" ];
-    # driSupport32Bit = true;
+    driSupport32Bit = true;
   };
 
   environment.systemPackages = with pkgs; [

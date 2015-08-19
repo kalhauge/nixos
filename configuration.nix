@@ -16,6 +16,10 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  services.ntp.enable = true;
+
+  time.timeZone = "Europe/Copenhagen";
+
   powerManagement = {
     enable = true;
     scsiLinkPolicy = "min_power";
@@ -40,11 +44,11 @@
     # Develop
     vim_configurable
     git
+    tmux
 
     # Code
     python27
     python34
-    # ghc.ghc783
     
     # X11 
     xclip
