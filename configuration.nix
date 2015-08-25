@@ -68,6 +68,8 @@
       incomplete-dir-enabled = true;
       watch-dir = "/home/kalhauge/Downloads";
       watch-dir-enabled = true;
+      ratio-limit-enabled = true;
+      ratio-limit = 2;
       encryption = 2;
       umask = 2;
     };
