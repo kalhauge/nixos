@@ -9,6 +9,7 @@
 
   users.extraGroups = {
     network = {};
+    transmission = {};
   };
   
   users.defaultUserShell = "/run/current-system/sw/bin/zsh";
@@ -19,6 +20,7 @@
     extraGroups = [ 
       "wheel"
       "network"
+      "transmission"
     ];
     shell = "/run/current-system/sw/bin/zsh";
     uid = 1000;

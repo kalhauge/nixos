@@ -59,6 +59,19 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
+  # Enable Transmission 
+  services.transmission = {
+    enable = true;
+    settings = {
+      download-dir = "/deep/Download";
+      incomplete-dir = "/deep/Download/.incomplete";
+      incomplete-dir-enabled = true;
+      watch-dir = "/home/kalhauge/Downloads";
+      watch-dir-enabled = true;
+      encryption = 2;
+      umask = 2;
+    };
+  };
   # Enable CUPS to print documents.
   services.printing.enable = true;
 }
