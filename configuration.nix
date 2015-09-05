@@ -18,7 +18,7 @@
 
   services.ntp.enable = true;
 
-  time.timeZone = "Europe/Copenhagen";
+  time.timeZone = "America/Los_Angeles";
 
   powerManagement = {
     enable = true;
