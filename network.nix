@@ -6,6 +6,9 @@
   networking = {
     hostName = "joshua";     # Define your hostname.
     hostId = "c43da070";
+    firewall = {
+      enable = true;
+    }; 
     wireless = {
       enable = true;  # Enables wireless.
       interfaces = [ "wlp4s0" ]; # Sadly it's needed
