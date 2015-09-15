@@ -8,6 +8,7 @@
     hostId = "c43da070";
     firewall = {
       enable = true;
+      allowedTCPPorts = [ 80 443 8080 ];
     }; 
     wireless = {
       enable = true;  # Enables wireless.

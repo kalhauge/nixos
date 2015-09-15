@@ -18,12 +18,16 @@
 
   services.ntp.enable = true;
 
-  time.timeZone = "America/Los_Angeles";
-
+  services.acpid = { 
+    enable = true;
+  };
+  
   powerManagement = {
     enable = true;
     scsiLinkPolicy = "min_power";
   };
+
+  time.timeZone = "America/Los_Angeles";
 
   programs.zsh.enable = true;
   

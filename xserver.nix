@@ -6,9 +6,12 @@
   # Enable the X11 windowing system.
   services.xserver = {
     enable = true;
-    displayManager.auto = {
-      enable = true;
-      user = "kalhauge";
+    displayManager = {
+      desktopManagerHandlesLidAndPower = true;
+      auto = {
+        enable = true;
+        user = "kalhauge";
+      };
     };
     videoDrivers = [ "nvidiaLegacy340" ];
     
