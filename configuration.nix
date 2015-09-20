@@ -24,7 +24,7 @@
   
   powerManagement = {
     enable = true;
-    scsiLinkPolicy = "min_power";
+    scsiLinkPolicy = "max_performance";
   };
 
   time.timeZone = "America/Los_Angeles";
