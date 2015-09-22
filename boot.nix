@@ -10,7 +10,10 @@
 
     # Gummiboot loader required with EFI boot
     # PROTIP: hold space when booting to see menu and old system versions
-    loader.gummiboot.enable = true;
+    loader.gummiboot = {
+      enable = true;
+      timeout = null;
+    };
 
     initrd = { 
       availableKernelModules = [ 
