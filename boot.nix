@@ -25,7 +25,7 @@
         "usbhid"
       ];     
       kernelModules = [ 
-        "fbcon"     # Text in the console, before login
+        # "fbcon"     # Text in the console, before login
         "kvm-intel" # Dunno...  
       ]; 
       
