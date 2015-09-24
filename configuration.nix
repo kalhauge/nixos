@@ -40,6 +40,7 @@
     # Utils
     htop
     wget
+    busybox
 
     # Fonts
     terminus_font
